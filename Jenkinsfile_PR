@@ -5,7 +5,7 @@ pipeline {
         stage('say hello') {
             steps {
                 echo 'hello there!'
-		githubNotify account: 'redtailsingh', context: 'jenkins/build', credentialsId: 'ae2269f18a17bd7663f0b06c10b834e0f97d927d', description: 'this is an example', repo: "${GIT_BRANCH}", sha: "${GIT_COMMIT}", status: 'SUCCESS', targetUrl:'http://192.168.82.1:8080/job/Redtail-Retriever/'
+		githubNotify account: 'redtailsingh', context: 'jenkins/build', credentialsId: 'bdce2bc2a0723f6896cfbc0a91ea3d35962226cd', description: 'this is an example', repo: "${GIT_BRANCH}", sha: "${GIT_COMMIT}", status: 'SUCCESS', targetUrl:'http://192.168.82.1:8080/job/Redtail-Retriever/'
             }
         }
         stage('say bye') {
